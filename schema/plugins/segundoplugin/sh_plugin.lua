@@ -8,12 +8,6 @@ function PLUGIN:InitializedPlugins()
     print("[SEGUNDO PLUGIN] Plugin cargado correctamente :p")
 end
 
-function PLUGIN:PlayerLoadedCharacter(client, character)
-    local inv = client:GetCharacter():GetInventory()
-    inv:Add("gmod_camera", 1)
-    client:Notify("Se te ha regalado una camara", client)
-end
-
 ix.command.Add("do", {
     description = "Comando para rolear tu entorno",
     adminOnly = false,
