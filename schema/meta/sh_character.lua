@@ -7,3 +7,18 @@ local CHAR = ix.meta.character
 function CHAR:IsPolice()
 	return self:GetFaction() == FACTION_POLICE
 end
+
+if (ix and ix.char and ix.char.vars and ix.char.vars.faction and ix.char.vars.faction.OnValidate) then
+	local factionVar = ix.char.vars.faction
+	local originalOnValidate = factionVar.OnValidate
+
+	factionVar.OnValidate = function(self, index, data, client)
+		local result = {originalOnValidate(self, index, data, client)}
+
+		if (result[1] == false and result[2] == nil) then
+			return false, "unknownError"
+		end
+
+		return unpack(result)
+	end
+end

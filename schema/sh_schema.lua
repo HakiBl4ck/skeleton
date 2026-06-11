@@ -24,3 +24,37 @@ ix.util.Include("sv_hooks.lua")
 -- You'll need to manually include files in the meta/ folder, however.
 ix.util.Include("meta/sh_character.lua")
 ix.util.Include("meta/sh_player.lua")
+
+-- Plugins: creación de personaje y panel administrativo
+ix.util.Include("plugins/sh_charcreator.lua")
+ix.util.Include("plugins/cl_charcreator.lua")
+ix.util.Include("plugins/sv_charcreator.lua")
+
+ix.util.Include("plugins/sh_adminpanel.lua")
+ix.util.Include("plugins/cl_adminpanel.lua")
+ix.util.Include("plugins/sv_adminpanel.lua")
+
+ix.util.Include("plugins/sh_adminnoclip.lua")
+ix.util.Include("plugins/cl_adminnoclip.lua")
+ix.util.Include("plugins/sv_adminnoclip.lua")
+
+ix.util.Include("plugins/sh_faction_manager.lua")
+ix.util.Include("plugins/cl_faction_manager.lua")
+ix.util.Include("plugins/sv_faction_manager.lua")
+
+ix.util.Include("plugins/cl_adminextras.lua")
+ix.util.Include("plugins/sv_adminextras.lua")
+
+ix.util.Include("plugins/sh_playermodel_selector.lua")
+ix.util.Include("plugins/cl_playermodel_selector.lua")
+ix.util.Include("plugins/sv_playermodel_selector.lua")
+
+ix.util.Include("plugins/cl_tlou_hud.lua")
+
+ix.util.Include("plugins/sh_crops.lua")
+ix.util.Include("plugins/cl_crops.lua")
+ix.util.Include("plugins/sv_crops.lua")
+
+ix.util.Include("plugins/sh_shop.lua")
+ix.util.Include("plugins/cl_shop.lua")
+ix.util.Include("plugins/sv_shop.lua")

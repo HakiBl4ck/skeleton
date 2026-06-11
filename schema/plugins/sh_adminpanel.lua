@@ -1,0 +1,1 @@
+-- Shared placeholder for admin panel

@@ -1,0 +1,1 @@
+-- Shared for character creator (empty placeholder)
